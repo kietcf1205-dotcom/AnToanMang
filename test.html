@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An toàn trên mạng xã hội - Bảo vệ bản thân trong thế giới ảo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --safety-blue: #0A3254; 
+            --alert-yellow: #FFD700; 
+            --neutral-gray: #F5F7FA; 
+            --white: #FFFFFF;
+            --text-dark: #333333;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--neutral-gray);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--safety-blue);
+            color: var(--white);
+            padding: 15px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h2 { margin: 0; font-size: 1.5rem; }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: var(--alert-yellow); }
+
+        section {
+            padding: 60px 5%;
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        h1, h2, h3 { color: var(--safety-blue); }
+
+        .hero {
+            text-align: center;
+            background-color: var(--safety-blue);
+            color: var(--white);
+            padding: 80px 20px;
+            border-radius: 0;
+            max-width: 100%;
+            margin-top: 0;
+        }
+
+        .hero h1 { color: var(--white); font-size: 2.5rem; margin-bottom: 20px; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto; }
+
+        .stat-box {
+            background-color: var(--alert-yellow);
+            color: var(--safety-blue);
+            padding: 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 30px;
+            display: inline-block;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--neutral-gray);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid var(--safety-blue);
+        }
+
+        .card.alert { border-left-color: var(--alert-yellow); }
+
+        .code-block {
+            background: #eee;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-weight: bold;
+            color: #d32f2f;
+        }
+
+        footer {
+            background-color: var(--safety-blue);
+            color: var(--white);
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container { grid-template-columns: 1fr; }
+            header { flex-direction: column; text-align: center; }
+            nav { margin-top: 15px; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Cổng thông tin Kỹ năng số</h2>
+        <nav>
+            <a href="#trang-chu">Trang chủ</a>
+            <a href="#nguy-co">Nguy cơ</a>
+            <a href="#cam-nang">Cẩm nang</a>
+            <a href="#lien-he">Liên hệ</a>
+        </nav>
+    </header>
+
+    <section id="trang-chu" class="hero">
+        <h1>An toàn trên mạng xã hội</h1>
+        <p>"Mạng xã hội là con dao hai lưỡi. Bạn đã sẵn sàng để bảo vệ chính mình?"</p>
+        <div class="stat-box">
+            Theo báo cáo, 90% sinh viên từng gặp tin nhắn lừa đảo. Chỉ 20% biết cách xử lý đúng.
+        </div>
+    </section>
+
+    <section id="nguy-co">
+        <h2>1. Nhận diện nguy cơ mất an toàn</h2>
+        <p>Môi trường mạng tiềm ẩn nhiều rủi ro tinh vi. Dưới đây là những cạm bẫy phổ biến nhất mà sinh viên thường gặp phải:</p>
+        
+        <div class="grid-container">
+            <div class="card alert">
+                <h3>Lừa đảo Phishing</h3>
+                <p><strong>Dấu hiệu nhận biết:</strong></p>
+                <ul>
+                    <li>Sai lệch tên miền tinh vi (ví dụ: <code>gogle.com</code> thay vì <code>google.com</code>).</li>
+                    <li>Tin nhắn tạo áp lực thúc giục thời gian.</li>
+                    <li>Yêu cầu cung cấp mã OTP khẩn cấp.</li>
+                </ul>
+            </div>
+            
+            <div class="card alert">
+                <h3>Bắt nạt qua mạng (Cyberbullying)</h3>
+                <p><strong>Cách xử lý:</strong></p>
+                <p>"Đừng im lặng. Hãy lưu lại bằng chứng (chụp màn hình) và báo cáo tài khoản vi phạm ngay lập tức cho nền tảng hoặc cơ quan chức năng."</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cam-nang">
+        <h2>2. Cẩm nang bảo mật cá nhân</h2>
+        <p>Áp dụng ngay các biện pháp rào chắn kỹ thuật dưới đây để bảo vệ tài khoản của bạn khỏi sự xâm nhập trái phép.</p>
+        
+        <div class="grid-container">
+            <div class="card">
+                <h3>Thiết lập mật khẩu mạnh</h3>
+                <p>Công thức tạo mật khẩu an toàn:</p>
+                <p class="code-block">[Ký tự hoa] + [Ký tự thường] + [Số] + [Ký tự đặc biệt]</p>
+                <p><em>Ví dụ thực hành: </em> <strong>Nttiu@2026!</strong></p>
+            </div>
+            
+            <div class="card">
+                <h3>Xác thực hai lớp (2FA)</h3>
+                <p>Các bước kích hoạt (Ví dụ trên Facebook):</p>
+                <ol>
+                    <li>Vào mục <strong>Cài đặt</strong> -> <strong>Bảo mật và đăng nhập</strong>.</li>
+                    <li>Chọn <strong>Xác thực 2 yếu tố</strong>.</li>
+                    <li>Lưu lại các <strong>mã dự phòng</strong> để sử dụng khi mất điện thoại.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <footer id="lien-he">
+        <h3>Bản quyền & Liên hệ</h3>
+        <a href="https://kietcf1205-dotcom.github.io/TieuLuan/test.html">AnToanMang</a> © 2026 by <a href="https://kietcf1205-dotcom.github.io/TieuLuan/test.html">Le Minh Kiet</a> is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+        <p style="font-size: 0.9rem; margin-top: 20px;">
+            &copy; 2026 Sản phẩm được thực hiện bởi nhóm sinh viên Viện Đào tạo Quốc tế (NIIE) - Trường Đại học Nguyễn Tất Thành.
+        </p>
+    </footer>
+
+</body>
+</html>
